@@ -7,7 +7,7 @@ class ProductionWorker : public Employee {
 public:
 
 	//constructors
-	ProductionWorker(string = "", int = 0, string = "XX-XX-XX", int = 0, double = 0);
+	ProductionWorker(string = "", int = 0, string = "XX-XX-XXXX", int = 0, double = 0);
 
 	// Accessor functions 
 	int getShift() const { return shift; }
