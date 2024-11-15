@@ -21,7 +21,7 @@ public:
 
 	void print() const override;
 
-	void employeePrint() const;
+	//void employeePrint() const;
 
 private:
 

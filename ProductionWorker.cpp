@@ -19,7 +19,8 @@ void ProductionWorker::setHourlyPayRate(double employeePayRate) {
 //This is the override of the print method
 void ProductionWorker::print() const{
 
-	employeePrint();
+	//employeePrint();
+	Employee::print();
 	string shiftTemp = (shift == 1) ? "Day" : "Night";
 	cout << "Shift: " << shiftTemp << endl;
 	cout << "Hourly Pay Rate: $" << hourlyPay << endl;
@@ -27,6 +28,6 @@ void ProductionWorker::print() const{
 
 }
 
-void ProductionWorker::employeePrint() const{
-	Employee::print();
-}
+//void ProductionWorker::employeePrint() const{
+//	Employee::print();
+//}
