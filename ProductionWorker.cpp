@@ -1,9 +1,20 @@
 #include "ProductionWorker.h"
 
-ProductionWorker::ProductionWorker(int shft, double pay) {
+ProductionWorker::ProductionWorker(string employeeName, int employeeID, string employeeHireDate, int shft, double pay) : Employee(employeeName, employeeID, employeeHireDate){
 	shift = shft;
 	hourlyPay = pay;
 }
+
+void setShift(int employeeShift) {
+
+	shift = employeeShift;
+}
+
+void setHourlyPayRate(double employeePayRate) {
+
+	hourlyPayRate = employeePayRate;
+}
+
 
 //This is the override of the print method
 void ProductionWorker::print() {

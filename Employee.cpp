@@ -16,12 +16,13 @@ void setName(const string& employeeName) {
 }
 
 void setID(int employeeNumber) {
+
+	id = employeeNumber;
 }
 void setHireDate(const string& employeeHireDate){
 
-
+	hireDate = employeeHireDate;
 }
-
 
 
 void Employee::print() {

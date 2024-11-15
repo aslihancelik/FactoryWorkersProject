@@ -7,7 +7,17 @@ class ProductionWorker : public Employee {
 public:
 
 	//constructors
-	ProductionWorker(int = 0, double = 0);
+	ProductionWorker(string = "", int = 0, string = "XX-XX-XX", int = 0, double = 0);
+
+	// Accessor functions 
+	int getShift() const { return shift; }
+	double getHourlyPayRate() const { return hourlyPay; }
+
+	// Mutator functions 
+	
+	void setShift(int employeeShift); 
+	void setHourlyPayRate(double employeePayRate);
+
 
 	void print() override {};
 
