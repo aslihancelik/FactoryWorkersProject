@@ -11,21 +11,21 @@ Employee::Employee(string employeeName, int employeeID, string employeeHireDate)
 
 //Mutator Functions
 
-void setName(const string& employeeName) {
+void Employee::setName(const string& employeeName) {
 	name = employeeName;
 }
 
-void setID(int employeeNumber) {
+void Employee::setID(int employeeNumber) {
 
 	id = employeeNumber;
 }
-void setHireDate(const string& employeeHireDate){
+void Employee::setHireDate(const string& employeeHireDate){
 
 	hireDate = employeeHireDate;
 }
 
 
-void Employee::print() {
+void Employee::print() const{
 	cout << "Name: " <<  name << endl;
 	cout << "Employee Number: " << id << endl;
 	cout << "Hire Date: " << hireDate << endl;

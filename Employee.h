@@ -28,7 +28,7 @@ public:
 	void setHireDate(const string& employeeHireDate);
 
 	//Print function
-	virtual void print() {};
+	virtual void print() const;
 
 private:
 

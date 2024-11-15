@@ -5,19 +5,19 @@ ProductionWorker::ProductionWorker(string employeeName, int employeeID, string e
 	hourlyPay = pay;
 }
 
-void setShift(int employeeShift) {
+void ProductionWorker::setShift(int employeeShift) {
 
 	shift = employeeShift;
 }
 
-void setHourlyPayRate(double employeePayRate) {
+void ProductionWorker::setHourlyPayRate(double employeePayRate) {
 
-	hourlyPayRate = employeePayRate;
+	hourlyPay = employeePayRate;
 }
 
 
 //This is the override of the print method
-void ProductionWorker::print() {
+void ProductionWorker::print() const{
 
 	employeePrint();
 	string shiftTemp = (shift == 1) ? "Day" : "Night";
@@ -27,6 +27,6 @@ void ProductionWorker::print() {
 
 }
 
-void ProductionWorker::employeePrint() {
+void ProductionWorker::employeePrint() const{
 	Employee::print();
 }

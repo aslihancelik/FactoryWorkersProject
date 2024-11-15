@@ -19,9 +19,9 @@ public:
 	void setHourlyPayRate(double employeePayRate);
 
 
-	void print() override {};
+	void print() const override;
 
-	void employeePrint() {};
+	void employeePrint() const;
 
 private:
 
