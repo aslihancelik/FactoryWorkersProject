@@ -7,8 +7,7 @@ class ProductionWorker : public Employee {
 public:
 
 	//constructors
-	//ProductionWorker(string = "", string = "", string = "XX", int = 10000);
-
+	ProductionWorker(int = 0, double = 0);
 
 	void print() override {};
 
@@ -19,5 +18,4 @@ private:
 	//the day shift is 1 and night shift is 2
 	int shift;
 	double hourlyPay;
-
 };

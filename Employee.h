@@ -7,7 +7,7 @@ using namespace std;
 class Employee {
 public:
 	//constructor
-	Employee();
+	Employee(string = "", int = 0, string = "XX-XX-XX");
 
 	virtual void print() {};
 
@@ -16,7 +16,5 @@ private:
 	string name;
 	int id;
 	string hireDate;
-	//shift?
-	//double hourlyPay;
 
 };

@@ -1,14 +1,16 @@
 
 #include "Employee.h"
-using namespace std;
-
 
 //constructors
-Employee(string = "XX", int = 00000, string = "XX-XX-XX");
+Employee::Employee(string employeeName, int employeeID, string employeeHireDate) {
+	name = employeeName;
+	id = employeeID;
+	hireDate = employeeHireDate;
+}
 
 void Employee::print() {
-	cout << name << endl;
-	cout << id << endl;
-	cout << hireDate << endl;
+	cout << "Name: " <<  name << endl;
+	cout << "Employee Number: " << id << endl;
+	cout << "Hire Date: " << hireDate << endl;
 }
 
