@@ -4,6 +4,7 @@
 #include <iostream>
 #include "ProductionWorker.h"
 #include "ShiftSupervisor.h"
+#include "TeamLeader.h"
 
 int main()
 {
@@ -24,6 +25,14 @@ int main()
     // Print the worker details
     cout << "Shift Supervisor" << endl << endl;
     supervisor.print();
+    cout << endl;
+
+    // Creating ShiftSuperVisor objects
+    TeamLeader teamleader("Mike Rogers", 64327, "2/7/2024", 1, 25.50, 150, 20, 10);
+
+    // Print the worker details
+    cout << "Team Leader" << endl << endl;
+    teamleader.print();
     cout << endl;
 
 }
