@@ -1,5 +1,8 @@
 // FactoryWorkersProject.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+// This program demonstrates the creation and usage of different employee types in a factory setting, including 
+// ProductionWorker, ShiftSupervisor, and TeamLeader. It creates instances of these classes, sets their attributes, 
+// and prints their details to the console.
 
 #include <iostream>
 #include "ProductionWorker.h"

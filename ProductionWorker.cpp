@@ -27,7 +27,3 @@ void ProductionWorker::print() const{
 
 
 }
-
-//void ProductionWorker::employeePrint() const{
-//	Employee::print();
-//}

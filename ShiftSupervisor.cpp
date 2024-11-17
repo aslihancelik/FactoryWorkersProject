@@ -1,5 +1,6 @@
 
 #include "ShiftSupervisor.h"
+#include <iomanip>
 
 ShiftSupervisor::ShiftSupervisor(string employeeName, int employeeID, string employeeHireDate, double salary, double bonus) : Employee(employeeName, employeeID, employeeHireDate) {
 	annualSalary = salary;
@@ -20,6 +21,7 @@ void ShiftSupervisor::setBonus(double bonus){
 void ShiftSupervisor::print() const {
 
 	Employee::print();
+	cout << fixed << setprecision(2);
 	cout << "Annual Salary: $" << annualSalary << endl;
 	cout << "Annual Bonus: $" << annualBonus << endl;
 
